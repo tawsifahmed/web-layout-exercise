@@ -11,8 +11,9 @@
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             grid-template-rows: 50px repeat(5, 75px);
-            row-gap: 15px;
-            column-gap: 10px;
+            row-gap: 25px;
+            column-gap: 20px;
+            margin-top: 25px;
         }
 
 
@@ -26,6 +27,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: 0.5s;
         }
 
         .day {
@@ -35,6 +37,23 @@
 
         .other-month {
             background-color: rgb(108, 150, 177);
+        }
+
+        .day:hover {
+            font-size: 3.8em;
+        }
+
+        .date:hover,
+        .other-month:hover {
+            transform: rotate(15deg);
+            font-size: 4em;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 65px repeat(5, 85px);
+        }
+
+        .other-month:hover {
+            font-size: 1em;
+            transform: rotate(-15deg);
         }
     </style>
 </head>
