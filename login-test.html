@@ -6,12 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-test</title>
+    <script src="https://kit.fontawesome.com/e9707dc9be.js" crossorigin="anonymous"></script>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+        }
+
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+        }
+
+        .login-form input {
+            margin: 10px;
+            font-size: 1em;
+            padding: 5px 10px;
+        }
+
+        .login-form input[type="submit"] {
+            background-color: lightcoral;
+            border: 0;
+            border-radius: 5px;
+            color: whitesmoke;
+            font-weight: 700;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+
 </head>
 
 <body>
-    <form class="login-form">
-        <h3>Kindly Login</h3>
-    </form>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Board</a>
+                <a href="">Factory</a>
+            </span>
+            <span>
+                <a href=""> <i class="fa-solid fa-id-badge"></i></a>
+                <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form class="login-form">
+            <h2>Kindly Login</h2>
+            <input type="email" name="" id="" placeholder="Enter Email" required>
+            <input type="password" name="" id="" placeholder="Enter Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
 </body>
 
 </html>
